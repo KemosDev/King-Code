@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mohamed Abd Al-Karim Riad Othman">
+    <meta name="copyright" content="Kemos">
+    <meta name="description" content="this website is a definingThis site introduces its owner and you can contact him to hire him.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/phone.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>King Code</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="main-logo">
+                <a class="alogo" href="./index.html"><sup>&langle;</sup>king code<sub>&rangle;</sub></a>
+            </div>
+            <div class="links">
+                <i id="bar" class="fa-solid fa-bars-staggered"></i>
+                <ul id="list" class="list">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#product">products</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <main class="about" id="about">
+            <section>
+                    <h1>king code</h1>
+                    <p class="define">
+                    Our company is a pioneer in the field of software with the latest technologies with us you see everything new in the world of technology.
+                    </p>
+                <div class="why">
+                    <h2>why choose us?</h2>
+                    <ul>
+                        <li>highly efficient in the field.</li>
+                        <li>updated software.</li>
+                        <li>long&dash;term support.</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <span><i class="fa-brands fa-facebook fa-2xl"></i></span>
+                    <span><i class="fa-brands fa-instagram fa-2xl"></i></span>
+                    <span><i class="fa-brands fa-tiktok fa-2xl"></i></span>
+                </div>
+            </section>
+        </main>
+        <main class="services" id="services">
+            <section>
+                <h2 class="h2">services</h2>
+                <div class="serv-container">
+                    <figure>
+                        <figcaption>logo</figcaption>
+                        <img class="logo" src="./images/logo.webp" alt="logo">
+                    </figure>
+                    <figure>
+                        <figcaption>landing page</figcaption>
+                        <img class="landing" src="./images/landing-page.webp" alt="landing page">
+                    </figure>
+                    <figure>
+                        <figcaption>e-learning</figcaption>
+                        <img class="e-learn" src="./images/e-learning.webp" alt="e-learning">
+                    </figure>
+                    <figure>
+                        <figcaption>e-commerce</figcaption>
+                        <img class="e-comm" src="./images/e-commerce.webp" alt="e-commerce">
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <main class="product" id="product">
+            <section>
+                <h2 class="h2">products</h2>
+                <div class="pro-container">
+                    <div class="pro1">
+                        <h3>landing page</h3>
+                        <p>starts from <span>$500</span> inclusive of all designs</p>
+                    </div>
+                    <div class="pro2">
+                        <h3>e-learning</h3>
+                        <p>starts from <span>$2000</span> inclusive of all designs</p>
+                    </div>
+                    <div class="pro3">
+                        <h3>e-commerce</h3>
+                        <p>starts from <span>$5000</span> inclusive of all designs</p>
+                    </div>
+                </div>
+                </section>
+        </main>
+        <main class="contact" id="contact">
+            <section>
+                <h2 class="h2">contact us</h2>
+                <form action="">
+                    <input type="text" name="type" placeholder="your name">
+                    <input type="email" name="email" placeholder="a@info.com">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+                    <input type="submit" value="send">
+                </form>
+            </section>
+        </main>
+        <script>
+            const list = document.getElementById('list');
+            const bar = document.getElementById('bar');
+            let isClicked = true;
+            bar.addEventListener('click', function() {
+                if(isClicked) {
+                    list.classList.add('list');
+                    isClicked = false;
+                } else {
+                    list.classList.remove('list');
+                    isClicked = true;
+                }
+            })
+        </script>
+</body>
+</html>

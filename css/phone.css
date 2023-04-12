@@ -1,0 +1,147 @@
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav .main-logo{
+    width: 40%;
+    height: 100%;
+}
+header nav .links{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header nav .links i{
+    display: block;
+    color: #ddd;
+    font-size: 150%;
+    color: #ddd;
+}
+header nav .links ul{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: max-content;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 15px);
+    background-color: #ddd;
+    box-shadow: 0 0 10px 3px black;
+}
+header nav .links ul.list{
+    display: none;
+}
+header nav .links ul::before{
+    content: '';
+    border: solid 10px;
+    border-color: transparent transparent #ddd transparent;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+}
+header nav .links ul li{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+header nav .links ul li:not(li:last-child){
+    border-bottom: solid 3px rgba(0, 0, 0, 0.445);
+}
+header nav .links ul li a{
+    display: block;
+    padding: 1vw 1vh;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-variant: small-caps;
+    font-family: sans-serif;
+    padding: 2%;
+}
+.about section p{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ddd;
+}
+.about section .why{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.about section .social{
+    width: 50%;
+}
+.services{
+    max-width: 100vw;
+    height: max-content;
+}
+.services section{
+    width: 97%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1%;
+}
+.services section .serv-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .serv-container figure{
+    width: 100%;
+    margin: 4% 0;
+}
+.services .serv-container figure img{
+    height: 100%;
+}
+.services .serv-container figure figcaption{
+    width: 100%;
+}
+.product{
+    max-width: 100vw;
+    height: 100vh;
+    margin-bottom: 3%;
+}
+.product section{
+    width: 100%;
+    height: 100%;
+}
+.product section .pro-container{
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product section .pro-container div{
+    width: 100%;
+    height: calc(95%/3);
+    padding: 2%;
+}
+.product section .pro-container div p{
+    font-family: sans-serif;
+}
+.product section .pro-container div p span{
+    font-family: cursive;
+}
+.contact form{
+    width: 100%;
+}
+.contact form input[type=submit]{
+    width: 50%;
+    font-family: sans-serif;
+}
