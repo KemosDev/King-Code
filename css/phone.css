@@ -5,11 +5,11 @@ header nav{
     justify-content: space-between;
 }
 header nav .main-logo{
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 header nav .links{
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: relative;
     display: flex;
@@ -21,6 +21,7 @@ header nav .links i{
     color: #ddd;
     font-size: 150%;
     color: #ddd;
+    z-index: 3;
 }
 header nav .links ul{
     width: 100vw;
@@ -42,7 +43,7 @@ header nav .links ul::before{
     border: solid 10px;
     border-color: transparent transparent #ddd transparent;
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 100%;
 }
 header nav .links ul li{
