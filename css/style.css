@@ -243,19 +243,19 @@ figcaption{
 }
 
 .pro1{
-    background: linear-gradient(#000000c4, #000000b7), url(../images/landing-page.webp);
+    background: linear-gradient(#000000c4, #000000b7), url(../images/logo.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .pro2{
-    background: linear-gradient(#000000c4, #000000b7), url(../images/e-learning.webp);
+    background: linear-gradient(#000000c4, #000000b7), url(../images/logo.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .pro3{
-    background: linear-gradient(#000000c4, #000000b7), url(../images/e-commerce.webp);
+    background: linear-gradient(#000000c4, #000000b7), url(../images/logo.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
